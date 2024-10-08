@@ -72,3 +72,15 @@ void editSual() {
     cout << "Yeni sualı daxil edin: ";
     string yeniSual;
     cin >> yeniSual;
+
+    cout << "Cavab A: ";
+    string cavabA;
+    cin >> cavabA;
+
+    cout << "Cavab B: ";
+    string cavabB;
+    cin >> cavabB;
+
+    cout << "Cavab C: ";
+    string cavabC;
+    cin >> cavabC;
