@@ -88,3 +88,10 @@ void editSual() {
     cout << "Düzgün cavabı seçin (A/B/C): ";
     char dogruCavab;
     cin >> dogruCavab;
+
+    int index = secim - 1;
+    suallar[index] = yeniSual;
+    cavablar[index][0] = cavabA;
+    cavablar[index][1] = cavabB;
+    cavablar[index][2] = cavabC;
+    duzgunCavablar[index] = dogruCavab;
