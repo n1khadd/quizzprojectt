@@ -132,6 +132,16 @@ void guestMode() {
     }
     cout << "Doğru cavablar: " << dogruSay << endl;
     cout << "Yanlış cavablar: " << yanlisSay << endl;
+
+    int toplamCavab = dogruSay + yanlisSay;
+    if (toplamCavab > 0) {
+        double faiz = (double)dogruSay / toplamCavab * 100;
+        cout << "Doğru cavabların faizi: " << faiz << "%" << endl;
+    }
+    else {
+        cout << "Heç bir cavab daxil edilməyib.\n";
+    }
+
 }
 void adminMenu() {
     while (true) {
