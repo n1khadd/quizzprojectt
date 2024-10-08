@@ -149,8 +149,8 @@ void adminMenu() {
         cout << "1. Yeni sual yarat\n";
         cout << "2. Suallara bax\n";
         cout << "3. Sualı redaktə et\n";
-        cout << "4. Çıxış\n";
-        cout << "Seçiminizi daxil edin: ";
+        cout << "4. Cixis\n";
+        cout << "Seciminizi daxil edin: ";
 
         int secim;
         cin >> secim;
@@ -166,10 +166,10 @@ void adminMenu() {
             editSual();
             break;
         case 4:
-            cout << "Admin menyusundan çıxılır...\n";
+            cout << "Admin menyusundan cixilir...\n";
             return;
         default:
-            cout << "Yanlış seçim!\n";
+            cout << "Yanlis secim!\n";
         }
     }
 }
@@ -178,8 +178,8 @@ int main() {
         cout << "\nGiriş Menyu\n";
         cout << "1. Admin\n";
         cout << "2. Guest\n";
-        cout << "3. Çıxış\n";
-        cout << "Seçiminizi daxil edin: ";
+        cout << "3. Cixis\n";
+        cout << "Seciminizi daxil edin: ";
 
         int rol;
         cin >> rol;
@@ -191,11 +191,11 @@ int main() {
             guestMode();
         }
         else if (rol == 3) {
-            cout << "Proqramdan çıxılır...\n";
+            cout << "Proqramdan cixilirr...\n";
             break;
         }
         else {
-            cout << "Yanlış rol seçimi!\n";
+            cout << "Yanlis rol secimi!\n";
         }
     }
 }
