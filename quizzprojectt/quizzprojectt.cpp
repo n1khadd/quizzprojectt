@@ -58,3 +58,10 @@ void suallaraBax() {
         cout << "Düzgün cavab: " << duzgunCavablar[i] << endl;
     }
 }
+void editSual() {
+    suallaraBax();
+    if (sualSayi == 0) return;
+
+    int secim;
+    cout << "Redaktə etmək istədiyiniz sual nömrəsini seçin: ";
+    cin >> secim;
