@@ -163,3 +163,10 @@ void adminMenu() {
         }
     }
 }
+int main() {
+    while (true) {
+        cout << "\nGiriş Menyu\n";
+        cout << "1. Admin\n";
+        cout << "2. Guest\n";
+        cout << "3. Çıxış\n";
+        cout << "Seçiminizi daxil edin: ";
