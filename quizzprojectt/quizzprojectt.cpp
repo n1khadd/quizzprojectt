@@ -45,3 +45,8 @@ void yeniSualYarat() {
     sualSayi++;
     cout << "Sual əlavə olundu.\n";
 }
+void suallaraBax() {
+    if (sualSayi == 0) {
+        cout << "Heç bir sual yoxdur!\n";
+        return;
+    }
