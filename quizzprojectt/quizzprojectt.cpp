@@ -4,7 +4,7 @@
 
 using namespace std;
 
-const int MAX_SUALLAR = 10;
+const int MAX_SUALLAR = 50;
 string suallar[MAX_SUALLAR];
 string cavablar[MAX_SUALLAR][3];
 char duzgunCavablar[MAX_SUALLAR];
@@ -15,3 +15,7 @@ void yeniSualYarat() {
         cout << "Maksimum sual sayına çatdınız!\n";
         return;
     }
+
+    cout << "Yeni sualı daxil edin: ";
+    string sual;
+    cin >> sual;
