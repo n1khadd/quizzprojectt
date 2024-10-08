@@ -50,3 +50,11 @@ void suallaraBax() {
         cout << "Heç bir sual yoxdur!\n";
         return;
     }
+    for (int i = 0; i < sualSayi; i++) {
+        cout << i + 1 << ". " << suallar[i] << endl;
+        cout << "A) " << cavablar[i][0] << endl;
+        cout << "B) " << cavablar[i][1] << endl;
+        cout << "C) " << cavablar[i][2] << endl;
+        cout << "Düzgün cavab: " << duzgunCavablar[i] << endl;
+    }
+}
