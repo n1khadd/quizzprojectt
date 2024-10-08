@@ -133,3 +133,11 @@ void guestMode() {
     cout << "Doğru cavablar: " << dogruSay << endl;
     cout << "Yanlış cavablar: " << yanlisSay << endl;
 }
+void adminMenu() {
+    while (true) {
+        cout << "\nAdmin Menyu\n";
+        cout << "1. Yeni sual yarat\n";
+        cout << "2. Suallara bax\n";
+        cout << "3. Sualı redaktə et\n";
+        cout << "4. Çıxış\n";
+        cout << "Seçiminizi daxil edin: ";
