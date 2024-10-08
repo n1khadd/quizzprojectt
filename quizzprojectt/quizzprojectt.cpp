@@ -41,3 +41,7 @@ void yeniSualYarat() {
     cavablar[sualSayi][1] = cavabB;
     cavablar[sualSayi][2] = cavabC;
     duzgunCavablar[sualSayi] = dogruCavab;
+    
+    sualSayi++;
+    cout << "Sual əlavə olundu.\n";
+}
