@@ -98,3 +98,8 @@ void editSual() {
 
     cout << "Sual yeniləndi.\n";
 }
+void guestMode() {
+    if (sualSayi == 0) {
+        cout << "Heç bir sual yoxdur!\n";
+        return;
+    }
