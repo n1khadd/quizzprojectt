@@ -170,3 +170,21 @@ int main() {
         cout << "2. Guest\n";
         cout << "3. Çıxış\n";
         cout << "Seçiminizi daxil edin: ";
+
+        int rol;
+        cin >> rol;
+
+        if (rol == 1) {
+            adminMenu();
+        }
+        else if (rol == 2) {
+            guestMode();
+        }
+        else if (rol == 3) {
+            cout << "Proqramdan çıxılır...\n";
+            break;
+        }
+        else {
+            cout << "Yanlış rol seçimi!\n";
+        }
+    }
