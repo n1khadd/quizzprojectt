@@ -35,3 +35,9 @@ void yeniSualYarat() {
     cout << "Düzgün cavabı seçin (A/B/C): ";
     char dogruCavab;
     cin >> dogruCavab;
+
+    suallar[sualSayi] = sual;
+    cavablar[sualSayi][0] = cavabA;
+    cavablar[sualSayi][1] = cavabB;
+    cavablar[sualSayi][2] = cavabC;
+    duzgunCavablar[sualSayi] = dogruCavab;
