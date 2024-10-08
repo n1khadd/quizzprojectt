@@ -130,3 +130,6 @@ void guestMode() {
         }
         cout << endl;
     }
+    cout << "Doğru cavablar: " << dogruSay << endl;
+    cout << "Yanlış cavablar: " << yanlisSay << endl;
+}
