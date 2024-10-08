@@ -65,3 +65,7 @@ void editSual() {
     int secim;
     cout << "Redaktə etmək istədiyiniz sual nömrəsini seçin: ";
     cin >> secim;
+    if (secim < 1 || secim > sualSayi) {
+        cout << "Yanlış seçim.\n";
+        return;
+    }
