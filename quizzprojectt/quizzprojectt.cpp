@@ -84,3 +84,7 @@ void editSual() {
     cout << "Cavab C: ";
     string cavabC;
     cin >> cavabC;
+
+    cout << "Düzgün cavabı seçin (A/B/C): ";
+    char dogruCavab;
+    cin >> dogruCavab;
