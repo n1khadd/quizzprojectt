@@ -115,3 +115,18 @@ void guestMode() {
         cout << "A) " << cavablar[randomIndex][0] << endl;
         cout << "B) " << cavablar[randomIndex][1] << endl;
         cout << "C) " << cavablar[randomIndex][2] << endl;
+
+        char cavab;
+        cout << "Cavabınızı daxil edin (A/B/C): ";
+        cin >> cavab;
+
+        if (cavab == duzgunCavablar[randomIndex]) {
+            cout << "Doğru cavab!\n";
+            dogruSay++;
+        }
+        else {
+            cout << "Yanlış cavab! Düzgün cavab: " << duzgunCavablar[randomIndex] << endl;
+            yanlisSay++;
+        }
+        cout << endl;
+    }
