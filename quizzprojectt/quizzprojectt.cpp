@@ -69,3 +69,6 @@ void editSual() {
         cout << "Yanlış seçim.\n";
         return;
     }
+    cout << "Yeni sualı daxil edin: ";
+    string yeniSual;
+    cin >> yeniSual;
