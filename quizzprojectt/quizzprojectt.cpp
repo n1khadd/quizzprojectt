@@ -105,3 +105,13 @@ void guestMode() {
     }
     int dogruSay = 0;
     int yanlisSay = 0;
+
+    srand(time(0));
+
+    for (int i = 0; i < sualSayi; i++) {
+        int randomIndex = rand() % sualSayi;
+
+        cout << "Sual: " << suallar[randomIndex] << endl;
+        cout << "A) " << cavablar[randomIndex][0] << endl;
+        cout << "B) " << cavablar[randomIndex][1] << endl;
+        cout << "C) " << cavablar[randomIndex][2] << endl;
