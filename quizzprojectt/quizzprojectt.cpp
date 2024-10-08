@@ -141,3 +141,25 @@ void adminMenu() {
         cout << "3. Sualı redaktə et\n";
         cout << "4. Çıxış\n";
         cout << "Seçiminizi daxil edin: ";
+
+        int secim;
+        cin >> secim;
+
+        switch (secim) {
+        case 1:
+            yeniSualYarat();
+            break;
+        case 2:
+            suallaraBax();
+            break;
+        case 3:
+            editSual();
+            break;
+        case 4:
+            cout << "Admin menyusundan çıxılır...\n";
+            return;
+        default:
+            cout << "Yanlış seçim!\n";
+        }
+    }
+}
