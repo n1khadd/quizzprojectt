@@ -95,3 +95,6 @@ void editSual() {
     cavablar[index][1] = cavabB;
     cavablar[index][2] = cavabC;
     duzgunCavablar[index] = dogruCavab;
+
+    cout << "Sual yeniləndi.\n";
+}
