@@ -103,3 +103,5 @@ void guestMode() {
         cout << "Heç bir sual yoxdur!\n";
         return;
     }
+    int dogruSay = 0;
+    int yanlisSay = 0;
