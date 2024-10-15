@@ -4,14 +4,14 @@
 
 using namespace std;
 
-const int MAX_SUALLAR = 50;
-string suallar[MAX_SUALLAR];
-string cavablar[MAX_SUALLAR][3];
-char duzgunCavablar[MAX_SUALLAR];
+const int sual_limit = 50;
+string suallar[sual_limit];
+string cavablar[sual_limit][3];
+char duzgunCavablar[sual_limit];
 int sualSayi = 0;
 
 void yeniSualYarat() {
-    if (sualSayi >= MAX_SUALLAR) {
+    if (sualSayi >= sual_limit) {
         cout << "Maksimum sual sayına çatdınız!\n";
         return;
     }
@@ -41,10 +41,11 @@ void yeniSualYarat() {
     cavablar[sualSayi][1] = cavabB;
     cavablar[sualSayi][2] = cavabC;
     duzgunCavablar[sualSayi] = dogruCavab;
-    
+
     sualSayi++;
     cout << "Sual əlavə olundu.\n";
 }
+
 void suallaraBax() {
     if (sualSayi == 0) {
         cout << "Heç bir sual yoxdur!\n";
@@ -58,6 +59,7 @@ void suallaraBax() {
         cout << "Düzgün cavab: " << duzgunCavablar[i] << endl;
     }
 }
+
 void editSual() {
     suallaraBax();
     if (sualSayi == 0) return;
@@ -66,10 +68,10 @@ void editSual() {
     cout << "Redaktə etmək istədiyiniz sual nömrəsini seçin: ";
     cin >> secim;
     if (secim < 1 || secim > sualSayi) {
-        cout << "Yanlış seçim.\n";
+        cout << "Yanlis seçim.\n";
         return;
     }
-    cout << "Yeni sualı daxil edin: ";
+    cout << "Suali redakte edin: ";
     string yeniSual;
     cin >> yeniSual;
 
@@ -98,6 +100,7 @@ void editSual() {
 
     cout << "Sual yeniləndi.\n";
 }
+
 void guestMode() {
     if (sualSayi == 0) {
         cout << "Heç bir sual yoxdur!\n";
@@ -141,8 +144,8 @@ void guestMode() {
     else {
         cout << "Heç bir cavab daxil edilməyib.\n";
     }
-
 }
+
 void adminMenu() {
     while (true) {
         cout << "\nAdmin Menyu\n";
@@ -173,9 +176,10 @@ void adminMenu() {
         }
     }
 }
+
 int main() {
     while (true) {
-        cout << "\nGiriş Menyu\n";
+        cout << "\nGiris Menyu\n";
         cout << "1. Admin\n";
         cout << "2. Guest\n";
         cout << "3. Cixis\n";
@@ -191,7 +195,7 @@ int main() {
             guestMode();
         }
         else if (rol == 3) {
-            cout << "Proqramdan cixilirr...\n";
+            cout << "Proqramdan cixilir...\n";
             break;
         }
         else {
